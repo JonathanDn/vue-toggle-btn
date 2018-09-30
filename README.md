@@ -3,14 +3,16 @@
 
 Feedback would be much appreciated, questions, suggestions, issues are more than welcome.
 
-## Options
-Options is basically a configuration object with properties that effect elements composing
+## Properties
+```options``` is a style configuration object with properties that effect elements composing
 the toggle button:
-1) handle - also an object that enables customization of the handle
-2) track - also an object that enables customization of the track
+| property | Type  | Description |
+| --- | ---  | --- |
+| handle | object | holds all handle style configurations |
+| track | object | holds all track style configurations |
 
 ### handle
-| property | Type | Default |Description |
+| property | Type | Default | Description |
 | --- | --- | --- | --- |
 | diameter | number | 30 | Sets the handle diameter (the round button moving) |
 | color | string | ```#fff``` | Sets the handle color |
