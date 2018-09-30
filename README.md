@@ -4,11 +4,12 @@
 Feedback would be much appreciated, questions, suggestions, issues are more than welcome.
 
 ## Properties
-```options``` is a style configuration object with properties that effect elements composing
+```options``` is a style configuration object holding the toggle-button building blocks which are ```handle``` and ```track```
 the toggle button:
 
 | property | Type  | Description |
 | --- | ---  | --- |
+| options | object | holds all toggle button style configurations |
 | handle | object | holds all handle style configurations |
 | track | object | holds all track style configurations |
 
