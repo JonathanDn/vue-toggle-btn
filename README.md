@@ -6,6 +6,7 @@ Feedback would be much appreciated, questions, suggestions, issues are more than
 ## Properties
 ```options``` is a style configuration object with properties that effect elements composing
 the toggle button:
+
 | property | Type  | Description |
 | --- | ---  | --- |
 | handle | object | holds all handle style configurations |
