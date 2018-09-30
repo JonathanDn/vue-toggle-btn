@@ -5,7 +5,6 @@ Feedback would be much appreciated, questions, suggestions, issues are more than
 
 ## Properties
 ```options``` is a style configuration object holding the toggle-button building blocks which are ```handle``` and ```track```
-the toggle button:
 
 | property | Type  | Description |
 | --- | ---  | --- |
