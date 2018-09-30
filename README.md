@@ -1,21 +1,2 @@
-# vue-toggle-slider
-
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
+# vue-toggle-button
+## An Highly Customizable, easy-to-use elegant toggle/switch button vue component
