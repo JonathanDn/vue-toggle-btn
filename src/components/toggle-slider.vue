@@ -22,7 +22,7 @@
 
 <script>
 	export default {
-		name: 'toggleSlider',
+		name: 'toggleButton',
 		props: ["options"],
 		data() {
 			return {
