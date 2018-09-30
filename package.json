@@ -1,0 +1,30 @@
+{
+  "name": "vue-toggle-slider",
+  "version": "0.1.1",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "vue": "^2.5.17"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.0.3",
+    "@vue/cli-service": "^3.0.3",
+    "node-sass": "4.9.3",
+    "sass-loader": "7.1.0",
+    "vue-template-compiler": "^2.5.17"
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ]
+}
