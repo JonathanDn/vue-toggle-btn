@@ -21,8 +21,8 @@
 						width: 70,
 						height: 30,
 						color: "#ccc",
-						activeColor: "#2196F3",
-						borderWidth: 2,
+						activeColor: "green",
+						borderWidth: 3,
 						borderRadius: "34px"
 					}
 				}

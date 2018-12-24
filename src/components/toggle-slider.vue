@@ -1,16 +1,19 @@
 <template>
 	<!--Binding css variables to use as height/width of :before -> the slider -->
 	<div class="toggle-slider"
-	     :style="{  '--handle-diameter' : options.handle.diameter + 'px',
-					'--handle-color': options.handle.color,
-					'--handle-border-radius': options.handle.borderRadius,
-					'--track-width': options.track.width + 'px',
-					'--track-height': options.track.height + 'px',
-					'--track-color': options.track.color,
-					'--track-active-color': options.track.activeColor,
+	     :style="{
+	                '--handle-diameter' : handle.diameter + 'px',
+					'--handle-color': handle.color,
+					'--handle-border-radius': handle.borderRadius,
+					'--handle-distance': getHandleDistance + 'px',
+
+					'--track-color': track.color,
+					'--track-width': track.width + 'px',
+					'--track-height': track.height + 'px',
+					'--track-active-color': track.activeColor,
 					'--track-border-width': options.track.borderWidth + 'px',
-					'--track-border-radius': options.track.borderRadius,
-					'--handle-distance': getHandleDistance + 'px'}">
+					'--track-border-radius': options.track.borderRadius
+				}">
 		<label class="switch">
 			<input type="checkbox">
 			<span class="track">
@@ -26,19 +29,59 @@
 		props: ["options"],
 		data() {
 			return {
-
+				handle: {
+					diameter: 30, // optional
+					distance: '30px', // optional
+					color: '#fff', // optional
+					borderRadius: "50%", // optional
+				},
+				track: {
+					color: '#ccc', // optional
+					width: 70, // optional
+					height: 30, // optional
+					activeColor: '#2196F3' // optional
+				}
 			}
 		},
 		computed: {
 			getHandleDistance: function() {
-				return this.options.track.width - this.options.handle.diameter;
+				let handleDistance = 0;
+				if (this.options && this.options.handle && this.options.track) {
+					handleDistance = this.options.track.width - this.options.handle.diameter;
+				} else {
+					handleDistance = this.handle.distance;
+				}
+				return handleDistance;
 			}
 		},
 		methods: {
-
+			setConfigData() {
+				if (this.options) {
+					if (this.options.handle) {
+						this.setBindedProp(this.handle, this.options.handle, 'diameter');
+						this.setBindedProp(this.handle, this.options.handle, 'color');
+						this.setBindedProp(this.handle, this.options.handle, 'borderRadius');
+					}
+					if (this.options.track) {
+						// TODO - track border width, track border radius - 24.12.18
+						this.setBindedProp(this.track, this.options.track, 'color');
+						this.setBindedProp(this.track, this.options.track, 'width');
+						this.setBindedProp(this.track, this.options.track, 'height');
+						this.setBindedProp(this.track, this.options.track, 'activeColor');
+					}
+				}
+			},
+			setBindedProp(localProp, propParent, propToBind) {
+				if (propParent[propToBind]) {
+					localProp[propToBind] = propParent[propToBind];
+				}
+			}
 		},
 		beforeCreate() {
 
+		},
+		mounted() {
+			this.setConfigData();
 		}
 	}
 </script>
