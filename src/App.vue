@@ -1,6 +1,7 @@
 <template>
 	<div id="app">
 		<toggle-slider :options="options"></toggle-slider>
+		<!--<toggle-slider></toggle-slider>-->
 	</div>
 </template>
 

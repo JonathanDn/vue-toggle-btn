@@ -11,8 +11,8 @@
 					'--track-width': track.width + 'px',
 					'--track-height': track.height + 'px',
 					'--track-active-color': track.activeColor,
-					'--track-border-width': options.track.borderWidth + 'px',
-					'--track-border-radius': options.track.borderRadius
+					'--track-border-width': track.borderWidth + 'px',
+					'--track-border-radius': track.borderRadius
 				}">
 		<label class="switch">
 			<input type="checkbox">
@@ -31,15 +31,17 @@
 			return {
 				handle: {
 					diameter: 30, // optional
-					distance: '30px', // optional
-					color: '#fff', // optional
+					distance: 40, // optional
 					borderRadius: "50%", // optional
+					color: '#fff', // optional
 				},
 				track: {
-					color: '#ccc', // optional
 					width: 70, // optional
 					height: 30, // optional
-					activeColor: '#2196F3' // optional
+					borderWidth: 3, // optional
+					borderRadius: '34px', // optional
+					color: '#ccc', // optional
+					activeColor: '#2196F3', // optional
 				}
 			}
 		},
@@ -68,6 +70,8 @@
 						this.setBindedProp(this.track, this.options.track, 'width');
 						this.setBindedProp(this.track, this.options.track, 'height');
 						this.setBindedProp(this.track, this.options.track, 'activeColor');
+						this.setBindedProp(this.track, this.options.track, 'borderWidth');
+						this.setBindedProp(this.track, this.options.track, 'borderRadius');
 					}
 				}
 			},
