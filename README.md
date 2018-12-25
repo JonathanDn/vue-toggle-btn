@@ -26,5 +26,5 @@ Feedback would be much appreciated, questions, suggestions, issues are more than
 | height | number | 30 | Sets the track height |
 | color | string | ```#ccc``` | Sets the default track color |
 | activeColor | string | ```#2196F3``` | Sets the active status track color(after toggled) |
-| borderWidth | number | 2 | Sets the track border width |
+| borderWidth | number | 0 | Sets the track border width |
 | borderRadius | string | ```34px``` | Sets the track border radius |
