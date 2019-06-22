@@ -4,7 +4,7 @@
 ![MIT License](https://badgen.net/badge/license/MIT/blue "MIT License")
 [![view on npm](http://img.shields.io/npm/v/vue-toggle-btn.svg?colorB=red)](https://www.npmjs.org/package/vue-toggle-btn)
 
-# Demo
+###### Demo
 ![toggle-btn](https://github.com/JonathanDn/vue-toggle-btn/blob/master/toggle_btn.gif "Vue Toggle Btn")
 
 # Usage
