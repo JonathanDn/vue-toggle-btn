@@ -4,6 +4,9 @@
 
 Feedback would be much appreciated, questions, suggestions, issues are more than welcome.
 
+# Demo
+![toggle-btn](https://github.com/JonathanDn/vue-toggle-btn/blob/master/toggle_btn.gif "Vue Toggle Btn")
+
 # Usage
 Install via NPM ```npm i vue-toggle-btn```
 
