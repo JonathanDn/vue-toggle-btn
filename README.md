@@ -4,6 +4,32 @@
 
 Feedback would be much appreciated, questions, suggestions, issues are more than welcome.
 
+# Usage
+Install via NPM ```npm i vue-toggle-btn```
+
+Then require in your project:
+```
+var VueToggleBtn = require('vue-toggle-btn');
+```
+or ES6 syntax:
+```
+import VueToggleBtn from 'vue-toggle-btn'
+```
+Then you can register the component globally:
+```
+Vue.component('vue-toggle-btn', VueToggleBtn);
+```
+Or in your Vue component:
+```
+components: {
+  VueToggleBtn
+}
+```
+You can then use the following selector anywhere in your project:
+* To get up and running quick the package now supports rendering just the selector with default values
+```
+<vue-toggle-btn></vue-toggle-btn>
+```
 ## Properties
 ```options``` is a style configuration object holding the toggle-button building blocks which are ```handle``` and ```track```
 
