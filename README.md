@@ -1,8 +1,8 @@
 # vue-toggle-btn
-###### npm version 0.1.1
 ## An Highly Customizable, easy-to-use elegant toggle/switch button component
 
-Feedback would be much appreciated, questions, suggestions, issues are more than welcome.
+![MIT License](https://badgen.net/badge/license/MIT/blue "MIT License")
+[![view on npm](http://img.shields.io/npm/v/vue-toggle-btn.svg?colorB=red)](https://www.npmjs.org/package/vue-toggle-btn)
 
 # Demo
 ![toggle-btn](https://github.com/JonathanDn/vue-toggle-btn/blob/master/toggle_btn.gif "Vue Toggle Btn")
@@ -25,7 +25,7 @@ Vue.component('vue-toggle-btn', VueToggleBtn);
 Or in your Vue component:
 ```
 components: {
-  VueToggleBtn
+  ToggleBtn
 }
 ```
 You can then use the following selector anywhere in your project:
