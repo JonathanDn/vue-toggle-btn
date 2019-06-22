@@ -1,4 +1,4 @@
-# vue-toggle-button
+# vue-toggle-btn
 ###### npm version 0.1.1
 ## An Highly Customizable, easy-to-use elegant toggle/switch button component
 
