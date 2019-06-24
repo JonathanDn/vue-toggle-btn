@@ -59,6 +59,16 @@ You can then use the following selector anywhere in your project:
 | borderWidth | number | 0 | Sets the track border width |
 | borderRadius | string | ```34px``` | Sets the track border radius |
 
+###Events
+| Event Name | Returns | Description |
+| --- | ---  | --- |
+| **setIsActive** | `isActive` | Clicking the toggle button emits an its current `isActive` boolean state, either `true` or `false`  |
+
+Listening to the event e.g:
+```
+<vue-toggle-btn @isActive="myLocalSetterFunction($event)"></vue-toggle-btn>
+```
+
 Feedback would be much appreciated, questions, suggestions, issues are more than welcome.
 
 ---
