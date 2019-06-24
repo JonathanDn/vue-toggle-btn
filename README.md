@@ -39,9 +39,9 @@ You can then use the following selector anywhere in your project:
 | property | Type  | Description |
 | --- | ---  | --- |
 | options | object | holds all toggle button style configurations |
+| isActive | false | holds the current boolean state of the button - can be `false` or `true` |
 | handle | object | holds all handle style configurations |
 | track | object | holds all track style configurations |
-| isActive | false | holds the current boolean state of the button - can be `false` or `true` |
 
 
 ### handle
