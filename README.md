@@ -34,13 +34,15 @@ You can then use the following selector anywhere in your project:
 <vue-toggle-btn></vue-toggle-btn>
 ```
 ## Properties
-```options``` is a style configuration object holding the toggle-button building blocks which are ```handle``` and ```track```
+```options``` is a full configuration object holding the toggle-button building blocks which are ```handle```,  ```track``` and ```isActive```
 
 | property | Type  | Description |
 | --- | ---  | --- |
 | options | object | holds all toggle button style configurations |
 | handle | object | holds all handle style configurations |
 | track | object | holds all track style configurations |
+| isActive | false | holds the current boolean state of the button - can be `false` or `true` |
+
 
 ### handle
 | property | Type | Default | Description |
@@ -59,10 +61,10 @@ You can then use the following selector anywhere in your project:
 | borderWidth | number | 0 | Sets the track border width |
 | borderRadius | string | ```34px``` | Sets the track border radius |
 
-###Events
+### events
 | Event Name | Returns | Description |
 | --- | ---  | --- |
-| **setIsActive** | `isActive` | Clicking the toggle button emits an its current `isActive` boolean state, either `true` or `false`  |
+| **setIsActive** | `isActive` | Clicking the toggle button emits an its current `isActive` boolean state |
 
 Listening to the event e.g:
 ```
