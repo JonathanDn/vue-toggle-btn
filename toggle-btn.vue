@@ -19,7 +19,7 @@ const PROP_KEYS = {
 	WIDTH: 'width',
 	HEIGHT: 'height',
 	ACTIVE_COLOR: 'activeColor'
-}
+};
 export default {
 	name: 'toggleButton',
 	props: ["options"],
@@ -53,22 +53,20 @@ export default {
 			return handleDistance;
 		},
 		getStyleObject: function(){
-
 			let styleObj = {
-		                '--handle-diameter' : this.handle.diameter + 'px',
-						'--handle-color': this.handle.color,
-						'--handle-border-radius': this.handle.borderRadius,
-						'--handle-distance': this.getHandleDistance + 'px',
-	
-						'--track-color': this.track.color,
-						'--track-width': this.track.width + 'px',
-						'--track-height': this.track.height + 'px',
-						'--track-active-color': this.track.activeColor,
-						'--track-border-width': this.track.borderWidth + 'px',
-						'--track-border-radius': this.track.borderRadius
-					}
+                '--handle-diameter' : this.handle.diameter + 'px',
+				'--handle-color': this.handle.color,
+				'--handle-border-radius': this.handle.borderRadius,
+				'--handle-distance': this.getHandleDistance + 'px',
 
-					return styleObj;
+				'--track-color': this.track.color,
+				'--track-width': this.track.width + 'px',
+				'--track-height': this.track.height + 'px',
+				'--track-active-color': this.track.activeColor,
+				'--track-border-width': this.track.borderWidth + 'px',
+				'--track-border-radius': this.track.borderRadius
+			};
+			return styleObj;
 		}
 	},
 	methods: {
