@@ -11,19 +11,19 @@
 Install via NPM ```npm i vue-toggle-btn```
 
 Then require in your project:
-```
+```js
 var VueToggleBtn = require('vue-toggle-btn');
 ```
 or ES6 syntax:
-```
+```js
 import VueToggleBtn from 'vue-toggle-btn'
 ```
 Then you can register the component globally:
-```
+```js
 Vue.component('vue-toggle-btn', VueToggleBtn);
 ```
 Or in your Vue component:
-```
+```js
 components: {
   ToggleBtn
 }
