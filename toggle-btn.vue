@@ -2,11 +2,11 @@
 	<!--Binding css variables to use as height/width of :before -> the slider -->
 	<div class="toggle-slider" :style="getStyleObject">
 		<label class="switch">
-				<input v-model="isActive" type="checkbox" @click="setNewToggleState">
-				<span class="track">
-					<span class="handle"></span>
-				</span>
-			</label>
+			<input v-model="isActive" type="checkbox" @click="setNewToggleState">
+			<span class="track">
+				<span class="handle"></span>
+			</span>
+		</label>
 	</div>
 </template>
 
