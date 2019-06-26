@@ -30,7 +30,7 @@ components: {
 ```
 You can then use the following selector anywhere in your project:
 * To get up and running quick the package now supports rendering just the selector with default values
-```
+```html
 <vue-toggle-btn></vue-toggle-btn>
 ```
 ## Properties
@@ -67,7 +67,7 @@ You can then use the following selector anywhere in your project:
 | **setIsActive** | `isActive` | Clicking the toggle button emits an its current `isActive` boolean state |
 
 Listening to the event e.g:
-```
+```html
 <vue-toggle-btn @isActive="myLocalSetterFunction($event)"></vue-toggle-btn>
 ```
 
