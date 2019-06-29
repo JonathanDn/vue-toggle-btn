@@ -54,11 +54,10 @@ export default {
 		},
 		getStyleObject: function(){
 			let styleObj = {
-                '--handle-diameter' : this.handle.diameter + 'px',
+				'--handle-diameter' : this.handle.diameter + 'px',
 				'--handle-color': this.handle.color,
 				'--handle-border-radius': this.handle.borderRadius,
 				'--handle-distance': this.getHandleDistance + 'px',
-
 				'--track-color': this.track.color,
 				'--track-width': this.track.width + 'px',
 				'--track-height': this.track.height + 'px',
@@ -71,24 +70,36 @@ export default {
 	},
 	methods: {
 		setConfigData() {
-			if (this.options) {
-				if (this.options.handle) {
+			if (!this.options) {
+				return;
+			}
 
-					let propsToBind = [PROP_KEYS.COLOR, PROP_KEYS.DIAMETER, PROP_KEYS.BORDER_RADIOUS];
-					propsToBind.forEach(element => {
-						this.setBindedProp('handle', element);
-					});
-				}
-				if (this.options.track) {
-					// TODO - track border width, track border radius - 24.12.18
-					let propsToBind = [PROP_KEYS.COLOR, PROP_KEYS.WIDTH, PROP_KEYS.HEIGHT, PROP_KEYS.ACTIVE_COLOR, PROP_KEYS.BORDER_WIDTH, PROP_KEYS.BORDER_RADIOUS];
-					propsToBind.forEach(element => {
-						this.setBindedProp('track', element);
-					});
-				}
-				if (this.options.isActive) {
-					this.isActive = this.options.isActive;
-				}
+			if (this.options.handle) {
+				[
+					PROP_KEYS.COLOR,
+					PROP_KEYS.DIAMETER,
+					PROP_KEYS.BORDER_RADIOUS
+				].forEach(element => {
+					this.setBindedProp('handle', element);
+				});
+			}
+
+			if (this.options.track) {
+				// TODO - track border width, track border radius - 24.12.18
+				[
+					PROP_KEYS.COLOR,
+					PROP_KEYS.WIDTH,
+					PROP_KEYS.HEIGHT,
+					PROP_KEYS.ACTIVE_COLOR,
+					PROP_KEYS.BORDER_WIDTH,
+					PROP_KEYS.BORDER_RADIOUS
+				].forEach(element => {
+					this.setBindedProp('track', element);
+				});
+			}
+
+			if (this.options.isActive) {
+				this.isActive = this.options.isActive;
 			}
 		},
 		setBindedProp(key, propToBind) {
@@ -100,9 +111,6 @@ export default {
 			this.isActive = !this.isActive;
 			this.$emit('setIsActive', this.isActive);
 		}
-	},
-	beforeCreate() {
-
 	},
 	created() {
 		this.setConfigData();
