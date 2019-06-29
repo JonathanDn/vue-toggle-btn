@@ -1,5 +1,5 @@
 # vue-toggle-btn
-## An Highly Customizable, easy-to-use elegant toggle/switch button component
+## A Highly Customizable, easy-to-use elegant toggle/switch button component
 
 ![MIT License](https://badgen.net/badge/license/MIT/blue "MIT License")
 [![view on npm](http://img.shields.io/npm/v/vue-toggle-btn.svg?colorB=red)](https://www.npmjs.org/package/vue-toggle-btn)
