@@ -16,7 +16,7 @@ var VueToggleBtn = require('vue-toggle-btn');
 ```
 or ES6 syntax:
 ```js
-import VueToggleBtn from 'vue-toggle-btn'
+import VueToggleBtn from 'vue-toggle-btn';
 ```
 Then you can register the component globally:
 ```js
