@@ -39,7 +39,8 @@ You can then use the following selector anywhere in your project:
 | property | Type  | Description |
 | --- | ---  | --- |
 | options | object | holds all toggle button style configurations |
-| isActive | false | holds the current boolean state of the button - can be `false` or `true` |
+| value | false | holds the current boolean state of the button - can be `false` or `true` |
+| name | *(empty)* | name of the actual checkbox input (when unsed inside a form) |
 | handle | object | holds all handle style configurations |
 | track | object | holds all track style configurations |
 
@@ -62,13 +63,16 @@ You can then use the following selector anywhere in your project:
 | borderRadius | string | ```34px``` | Sets the track border radius |
 
 ### events
-| Event Name | Returns | Description |
-| --- | ---  | --- |
-| **setIsActive** | `isActive` | Clicking the toggle button emits an its current `isActive` boolean state |
+All standard input events (focus, input, change, etc.) as you could put on any other standard input.
 
 Listening to the event e.g:
 ```html
-<vue-toggle-btn @isActive="myLocalSetterFunction($event)"></vue-toggle-btn>
+<vue-toggle-btn @input="myLocalSetterFunction($event)"></vue-toggle-btn>
+```
+
+The component can also work with v-model e.g:
+```html
+<vue-toggle-btn v-model="myInput"></vue-toggle-btn>
 ```
 
 Feedback would be much appreciated, questions, suggestions, issues are more than welcome.
