@@ -26,5 +26,12 @@
     "> 1%",
     "last 2 versions",
     "not ie <= 8"
-  ]
+  ],
+  "bit": {
+    "env": {
+      "compiler": "bit.envs/bundlers/vue@2.5.1"
+    },
+    "componentsDefaultDirectory": "components/{name}",
+    "packageManager": "npm"
+  }
 }

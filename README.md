@@ -3,9 +3,13 @@
 
 ![MIT License](https://badgen.net/badge/license/MIT/blue "MIT License")
 [![view on npm](http://img.shields.io/npm/v/vue-toggle-btn.svg?colorB=red)](https://www.npmjs.org/package/vue-toggle-btn)
+[![bit components](https://img.shields.io/badge/dynamic/json.svg?color=6e3991&label=bit%20components&query=payload.totalComponents&url=https%3A%2F%2Fapi.bit.dev%2Fscope%2Fjonathandn%2Fdynamiccomponents)](https://bit.dev/jonathandn/dynamiccomponents)
 
 ###### Demo
-![toggle-btn](https://github.com/JonathanDn/vue-toggle-btn/blob/master/toggle_btn.gif "Vue Toggle Btn")
+<p align="left">
+  <a href="https://bit.dev/jonathandn/dynamiccomponents/toggle-btn">
+  <img src="https://github.com/JonathanDn/vue-toggle-btn/blob/master/toggle_btn.gif?raw=true" alt="Vue Toggle Btn"></a>
+</p>
 
 # Usage
 Install via NPM ```npm i vue-toggle-btn```
