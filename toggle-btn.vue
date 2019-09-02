@@ -39,7 +39,7 @@ export default {
 				borderWidth: 0, // optional
 				borderRadius: '34px', // optional
 			},
-			isActive: false,
+			isActive: true,
 		}
 	},
 	computed: {
