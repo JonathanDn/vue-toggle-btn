@@ -42,7 +42,7 @@ export default {
 				activeColor: '#2196F3', // optional
 				borderWidth: 0, // optional
 				borderRadius: '34px', // optional
-			},
+			}
 		}
 	},
 	computed: {
