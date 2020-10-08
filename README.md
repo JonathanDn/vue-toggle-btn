@@ -74,7 +74,4 @@ Listening to the event e.g:
 Feedback would be much appreciated, questions, suggestions, issues are more than welcome.
 
 ---
-
-If you like to support my open-source contributions and feeling generous, feel free to:
-
-<a href="https://www.buymeacoffee.com/agUdP2R" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: auto !important;width: auto !important;" ></a>
+👨‍💻 Follow me on [Twitter](https://twitter.com/jodoron).
