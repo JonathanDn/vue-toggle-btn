@@ -39,7 +39,8 @@ You can then use the following selector anywhere in your project:
 | property | Type  | Description |
 | --- | ---  | --- |
 | options | object | holds all toggle button style configurations |
-| isActive | false | holds the current boolean state of the button - can be `false` or `true` |
+| value | boolean | holds the current boolean state of the button - can be `false` or `true` (default is `false`) |
+| name | *(empty)* | name of the actual checkbox input (when unsed inside a form) |
 | handle | object | holds all handle style configurations |
 | track | object | holds all track style configurations |
 
@@ -63,12 +64,22 @@ You can then use the following selector anywhere in your project:
 
 ### events
 | Event Name | Returns | Description |
-| --- | ---  | --- |
-| **setIsActive** | `isActive` | Clicking the toggle button emits an its current `isActive` boolean state |
+| --- | ---  | --- |	
+| **change** | `(standard browser *change* event)` | When the element is :checked (by clicking or using the keyboard)  |
+| **input** | `(standard browser *input* event)` | When a user toggles the control, per the HTML5 specification  |
+| **focus** | `(standard browser *focus* event)` | when the input received focus  |
+
+
+All standard HTML <input> events (focus[in/out], blur, input, change, etc.) as you could put on any other standard input.
 
 Listening to the event e.g:
 ```html
-<vue-toggle-btn @isActive="myLocalSetterFunction($event)"></vue-toggle-btn>
+<vue-toggle-btn @input="myLocalSetterFunction($event)"></vue-toggle-btn>
+```
+
+If you prefer using v-model in your project for 2-way bindings between data and inputs, the component can also work with v-model e.g:
+```html
+<vue-toggle-btn v-model="myInput"></vue-toggle-btn>
 ```
 
 Feedback would be much appreciated, questions, suggestions, issues are more than welcome.

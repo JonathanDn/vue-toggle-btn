@@ -2,7 +2,7 @@
 	<!--Binding css variables to use as height/width of :before -> the slider -->
 	<div class="toggle-slider" :style="getStyleObject">
 		<label class="switch">
-			<input v-model="isActive" type="checkbox" @click="setNewToggleState">
+			<input :value="value" :name="name" v-on="$listeners" type="checkbox">
 			<span class="track">
 				<span class="handle"></span>
 			</span>
@@ -22,7 +22,11 @@ const PROP_KEYS = {
 };
 export default {
 	name: 'toggleButton',
-	props: ["options"],
+	props: {
+		options: Object,
+		value: Boolean,
+		name: String,
+	},
 	data() {
 		return {
 			handle: {
@@ -38,8 +42,7 @@ export default {
 				activeColor: '#2196F3', // optional
 				borderWidth: 0, // optional
 				borderRadius: '34px', // optional
-			},
-			isActive: true,
+			}
 		}
 	},
 	computed: {
@@ -97,20 +100,12 @@ export default {
 					this.setBindedProp('track', element);
 				});
 			}
-
-			if (this.options.isActive) {
-				this.isActive = this.options.isActive;
-			}
 		},
 		setBindedProp(key, propToBind) {
 			if (this.option[key][propToBind]) {
 				this[key][propToBind] = this.option[key][propToBind];
 			}
 		},
-		setNewToggleState() {
-			this.isActive = !this.isActive;
-			this.$emit('setIsActive', this.isActive);
-		}
 	},
 	created() {
 		this.setConfigData();
