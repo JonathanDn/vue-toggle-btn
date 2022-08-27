@@ -103,8 +103,8 @@ export default {
 			}
 		},
 		setBindedProp(key, propToBind) {
-			if (this.option[key][propToBind]) {
-				this[key][propToBind] = this.option[key][propToBind];
+			if (this.options[key][propToBind]) {
+				this[key][propToBind] = this.options[key][propToBind];
 			}
 		},
 		setNewToggleState() {
